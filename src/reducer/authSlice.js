@@ -52,7 +52,7 @@ const loginSlice = createSlice({
         state.status = "loading";
       })
       .addCase(fetchLogin.fulfilled, (state, action) => {
-        state.status = "succeeded";
+        state.status = "succes";
         state.user = action.payload;
       })
       .addCase(fetchLogin.rejected, (state, action) => {

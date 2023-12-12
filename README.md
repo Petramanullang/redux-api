@@ -1,8 +1,19 @@
-# React + Vite
+<h1 align='center'>
+    Redux API
+</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img src="./src/assets/readme.png">
 
-Currently, two official plugins are available:
+## Summary
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project demonstrates the integration of an API from reqres.in using Redux, along with the utilization of Framer Motion library for animations.
+
+## Description
+
+This application showcases the integration of an API service provided by reqres.in, a platform that simulates a RESTful API. It demonstrates the usage of Redux, a predictable state container for JavaScript applications, to manage the application's state, and Framer Motion library for creating smooth and interactive animations.
+
+## Features
+
+- **Redux Integration:** Utilizes Redux to manage the state of the application.
+- **API Consumption:** Fetches data from reqres.in API to display and manage user-related information.
+- **Framer Motion Animations:** Implements Framer Motion for creating fluid and engaging animations within the application.
