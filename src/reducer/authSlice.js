@@ -1,4 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import Swal from "sweetalert2";
 
 // Simpan token ke dalam variabel global jika perlu
 let authToken = null;
@@ -54,10 +55,19 @@ const loginSlice = createSlice({
       .addCase(fetchLogin.fulfilled, (state, action) => {
         state.status = "succes";
         state.user = action.payload;
+        Swal.fire({
+          icon: "success",
+          title: "Login Berhasil!",
+        })
       })
       .addCase(fetchLogin.rejected, (state, action) => {
         state.status = "failed";
         state.error = action.error.message;
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: action.error.message,
+        })
       });
   },
 });
